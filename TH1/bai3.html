@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Shop</title>
+  <link rel="stylesheet" href="./css/bai3.css">
+</head>
+
+<body>
+  <div class="burger">
+    <div class="burger__container">
+      <div class="burger__logo"><img src="./public/burger_logo.png" alt="ANNES'S BURGERS"></div>
+
+      <h2>Create a burger!</h2>
+
+      <form class="burger__form" method="post">
+        <div class="burger__item">
+          <label for="protein">What type of protein would you like?</label>
+          <input type="text" id="protein" name="protein">
+        </div>
+
+        <div class="burger__item">
+          <label for="patties">How many patties would you like?</label>
+          <input type="text" name="patties" id="patties">
+        </div>
+
+        <div class="burger__item">
+          <label for="cookied">How do you want patty cookied</label>
+          <br />
+          Rare <input type="range" name="cookied" id="cookied"> Well-Done
+        </div>
+
+        <div class="burger__item">
+          <label for="toppings">What toppings would you like?</label>
+          <br />
+          <input type="checkbox" name="toppings" id="toppings" value="1"> Lattue
+          <input type="checkbox" name="toppings" id="toppings" value="2"> Tomato
+          <input type="checkbox" name="toppings" id="toppings" value="3"> Onion
+        </div>
+
+        <div class="burger__item">
+          <label for="cheese">Would you like to add cheese?</label>
+          <br />
+          <input type="radio" name="cheese" id="cheese" value="1"> Yes
+          <input type="radio" name="cheese" id="cheese" value="0"> No
+        </div>
+
+        <div class="burger__item">
+          <label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="1">Sesame</option>
+            <option value="2">???</option>
+            <option value="3">???</option>
+          </select>
+        </div>
+
+        <div class="burger__item">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input type="text" name="sauce" id="sauce">
+        </div>
+
+        <div class="burger__item">
+          <label for="more">Anythings else you want to add?</label>
+          <br />
+          <textarea name="more" id="more" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="burger__item">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

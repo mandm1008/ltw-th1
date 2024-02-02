@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.main {
+  width: 400px;
+  padding: 24px;
+}
+
+.main>img {
+  width: 100px;
+}
+
+.item {
+  padding: 24px 0;
+}
+
+.item h2 {
+  padding: 12px 0;
+}
+
+.item:nth-child(even) {
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
